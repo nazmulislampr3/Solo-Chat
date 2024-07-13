@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .box {
+    @apply bg-red-400 py-5 px-2;
+    .paragraph {
+      @apply text-blue-800 font-bold;
+    }
+    .box1 {
+      @apply bg-green-500 px-2 py-2;
+      & > .box2 {
+        @apply bg-sky-500 px-2 py-5;
+      }
+    }
+  }
+}
